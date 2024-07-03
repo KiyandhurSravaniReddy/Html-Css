@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="html.js"></script>
+    </head>
+    <body>
+        <form align="center">
+            <label for="fname">Firstname:</label>
+            <input type="text" name="firstname" id="fname" placeholder="enter firstname" onblur="firstname()"
+            minlength="3" maxlength="15" required>
+            <br><br>
+            <label for="lname">Lastname:</label>
+            <input type="text" name="lastname" id="lname" placeholder="enter lastname" minlength="3" maxlength="15" required>
+            <br><br>
+            <label for="mname">Middlename:</label>
+            <input type="text" name="middlename" id="mname" placeholder="enter middlename">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <select>
+                <option value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select>
+            <br><br>
+            <label for="mobile">Mobilenumber:</label>
+            <input type="text" id="mobile" name="mobile" placeholder="enter your mobilenumber" minlength="10"  maxlength="10" pattern="[6-9]{3}[0-9]{3}[0-9]{4}" required>
+            <br><br>
+            <label for="Address">permanentAddress:</label>
+             <input type="text" id="address" name="address" placeholder="enter your permanentAddress" required minlength="25" maxlength="25">
+            <br><br>
+            <label for="address">Temporaryadress:</label>
+            <input type="text" id="address" name="address" placeholder="enter your Temporaryadress" required minlength="25" maxlength="25">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="enter your email-id" required pattern="^[a-zA-Z0-9]{5}@[a-zA-Z0-9]{2,10}.(es|com|org)$'">
+            <br><br>
+            <span></span>
+            <input type="submit">
+        </form>
+    </body>
+</html>
